@@ -1,0 +1,256 @@
+
+1
+
+60%
+Department of Computer Science and Engineering (Data Science)
+Guide: Prof. Kanchan Dabre
+Aniket Waghela 60009220033
+Bhavya Jappi 60009220004
+Kerul Kidecha 60009220064
+Polycystic Kidney Disease (PKD) Detection System
+● Introduction
+● Literature Review
+● Research Gap
+● Problem Definition
+● Proposed Design
+2
+Agenda
+Introduction
+• Polycystic Kidney Disease (PKD) is a genetic disorder where many fluid-filled
+cysts grow in the kidneys.
+• These cysts cause the kidneys to enlarge, reducing their function and sometimes
+leading to kidney failure.
+• Traditional diagnosis depends on manual MRI/CT image analysis and genetic
+testing, which is slow and time-consuming.
+• Such methods are subjective and often detect the disease in late stages, missing
+early warning signs.
+• Using Machine Learning (ML), we can automate cyst detection, classify disease
+severity, and predict disease progression.
+• Our project builds an ML-Enhanced PKD Detection System that provides early,
+accurate, and explainable diagnosis, helping doctors make better decisions and
+Title Author Methodology Gaps
+Deep Learning–Based
+Automated Imaging
+Classification of ADPKD
+Youngwoo
+Kim,
+Seonah Bu
+,
+Cheng Tao
+,Kyongtae
+T. Bae
+Used Transfer Learning with CNNs and
+Explainable AI (XAI) to classify typical
+and atypical PKD from MRI images.
+Limited to image classification;
+no integration with genetic or
+clinical data; lower confidence
+in atypical cases.
+Deep Learning for PKD:
+Utilizing Neural
+Networks for Early
+Detection through Gene
+Expression
+Kapil
+Panda,
+Anirudh
+Mazumde
+r
+Applied MLPs with backpropagation, K-
+Means Clustering, and Stacking
+Ensembles (SVC, RF, GB, LR) on gene
+expression data.
+Limited real-world gene data;
+trained mostly on animal
+datasets; lacks explainability
+(no XAI).
+An AI-Generated
+Algorithm to Measure
+Total Kidney Volume in
+ADPKD
+Taylor, J.,
+Thomas,
+R.,
+Metherall
+Used Ensemble U-Net (nnU-Net) for
+kidney segmentation and volume
+measurement from MRI.
+Dataset bias (young, PKD1-
+dominant); limited to specific
+scanners; no real-time clinical
+deployment.
+Characterizing the
+ADPKD-IFT140
+Phenotypic Signature
+with Deep Learning
+Ahmad Gh
+anem,
+Fadi
+George M
+unairdjy
+Used Deep Learning for Cystic Phenotypic
+Signature Analysis (CPSA) and cystic
+index calculation.
+Model focused on one genotype
+(IFT140); lacks generalization
+and progression tracking.
+Literature Review
+Title Author Methodology Gaps
+A Deep Learning
+Approach for
+Automatic Detection
+of Kidney Diseases
+using CT Images
+Srinivas
+Aluvala,
+Pulluri
+Srinivas
+Rao
+Used CNN-based Deep Learning for detecting
+kidney diseases, including PKD patterns, from
+CT scans.
+Not PKD-specific; poor
+detection of small cysts; no
+integration with genetic
+data.
+Deployed Deep
+Learning Kidney
+Segmentation for
+PKD MRI
+Akshay
+Goel,
+Gorge
+Shih
+Applied U-Net with EfficientNet Encoder and
+Transfer Learning for kidney segmentation.
+Only single-time MRI
+analysis; segmentation
+errors for complex cysts; no
+growth prediction.
+AI Models for
+Automated
+Segmentation of
+Engineered PKD
+Tubules
+Simone
+Monaco,
+Nicole
+Bussola,
+Compared U-Net, UNet++, HardNet-MSEG,
+PraNet, and UACANet with data
+augmentation and post-processing.
+Poor detection of small
+cysts; used single-donor
+dataset; requires manual
+post-processing.
+Leveraging
+Explainable AI (XAI)
+for Expert Systems in
+Latifa
+Dwiyant
+i,
+Hidetak
+a
+Used RF, LR, SVM, LightGBM, XGBoost, DNN
+with SMOTE/ROS and XAI tools (LIME/SHAP)
+Data imbalance;
+demographic bias; limited
+real-world validation;
+Literature Review
+Deep Learning-
+Based Automated
+Kidney and Cyst
+Segmentation
+Using Multi-
+Institutional Data
+Emma K.
+Schmidt,
+Chetana
+Krishnan
+,
+Ezinwan
+ne Onuo
+ha
+Used CNN-based segmentation with
+single vs. multi-institutional training
+datasets.
+Institutional variability;
+limited validation; focused
+only on ADPKD cases.
+Automatic
+Segmentation of
+Kidneys Using
+Deep Learning for
+Total Kidney
+Volume
+Quantification
+Kanishka
+Sharma,
+Christian
+Rupprec
+ht
+Used Deep Learning segmentation to
+calculate Total Kidney Volume (TKV)
+from MRI scans.
+Old dataset; single-modality
+imaging; lacks modern
+explainable AI and genetic
+integration.
+Artificial
+Intelligence in
+Nephrology:
+Clinical
+Prabhat
+Singh,
+Lokesh G
+Reviewed AI and ML models in
+nephrology, covering PKD
+segmentation, diagnosis, and
+Broad coverage; not specific
+to PKD; highlights ethical and
+interpretability concerns.
+Analysis of Literature Survey
+Deep Learning Techniques: Most studies used CNN-based and U-Net models for
+kidney and cyst segmentation, showing high accuracy but limited generalization.
+Explainable AI (XAI): Recent research started using SHAP and LIME to make AI
+models more interpretable and trustworthy for clinicians.
+Data Limitations: Many studies used small or single-center datasets, which cause
+bias and reduce the model’s performance on real-world data.
+Lack of Multi-Modal Systems: Existing works focus on only imaging or gene data,
+missing the benefit of combining imaging, genetic, and clinical features.
+Need for Long-Term Prediction: Most models analyze data from a single time
+point; there is a strong need for longitudinal or time-series analysis to track
+disease progression.
+Research Gap
+1. Limited Early Detection Models:
+Most existing studies focus on detecting PKD at later stages. There is a lack of machine
+learning models that can identify early signs of the disease before severe kidney damage
+occurs.
+2. Lack of Explainability and Trust:
+Many deep learning models work like “black boxes”, providing results without explaining
+how decisions are made.This reduces trust among doctors and limits clinical adoption.
+3. Insufficient Multi-Modal Integration:
+Current research often uses only image data (MRI/CT) or only genetic data. There is a
+research gap in combining both imaging and clinical/genetic information to make the
+diagnosis more accurate and personalized.
+Problem Definition
+Polycystic Kidney Disease (PKD) diagnosis currently depends on manual image
+analysis and genetic testing, which are time-consuming and often detect the disease
+at later stages. Existing AI models mainly focus on imaging data and lack early
+detection capabilities and interpretability. Therefore, there is a need for a machine
+learning–based system that can automatically detect cysts, assess disease severity,
+and provide early, accurate, and explainable PKD diagnosis to support clinical
+decision-making.
+
+Mateatical Foudatio of Model
+Dice Coefficient for Segmentation
+Where TP = true positives, FP = false positives, FN = false negatives.
+U-Net for Imaging Segmentation
+Objective: Minimize loss for accurate cyst boundaries.
+U-Net Equation:
+• Encoder: Convolutional layers with MaxPooling.
+• Decoder: Up-Convolution with concatenation.
+How It Works:
+1. Input: MRI/CT images.
+2. Feature Maps: Extract hierarchical features.
+3. Output: Segmented mask for cysts/kidneys

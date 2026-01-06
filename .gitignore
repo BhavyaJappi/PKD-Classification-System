@@ -1,0 +1,9 @@
+# Data directory (large dataset)
+data/
+
+# Python cache
+__pycache__/
+*.pyc
+*.pyo
+
+model_training/outputs/models

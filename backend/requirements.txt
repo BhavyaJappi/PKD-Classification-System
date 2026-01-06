@@ -1,0 +1,20 @@
+# PKD Classification Backend - Requirements
+# ==========================================
+
+# Core web framework
+fastapi==0.104.1
+uvicorn[standard]==0.24.0
+
+# Machine learning
+torch>=2.0.0
+torchvision>=0.15.0
+
+# Image processing
+Pillow>=10.0.0
+
+# Data handling
+numpy>=1.24.0
+
+# API utilities
+python-multipart==0.0.6
+pydantic>=2.0.0
