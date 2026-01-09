@@ -157,15 +157,11 @@ CLASS_COLORS = {
 CLASS_DESCRIPTIONS = {
     'Normal': 'The kidney appears healthy with no visible abnormalities.',
     'Cyst': 'A fluid-filled sac (cyst) detected in the kidney tissue.',
-    'Tumor': 'Abnormal tissue growth detected that may require further evaluation.',
-    'Stone': 'Kidney stone (calculus) detected in the kidney or urinary tract.'
 }
 
 CLASS_ICONS = {
     'Normal': '✅',
     'Cyst': '💧',
-    'Tumor': '⚠️',
-    'Stone': '💎'
 }
 
 # ============================================================================
