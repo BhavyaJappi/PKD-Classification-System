@@ -17,8 +17,7 @@ This project implements a deep learning-based system for classifying kidney CT s
 |-------|-------------|---------|
 | 🟢 **Normal** | Healthy kidney with no abnormalities | 5,077 |
 | 🟠 **Cyst** | Fluid-filled sac in kidney tissue | 3,709 |
-| 🔴 **Tumor** | Abnormal tissue growth | 2,283 |
-| 🟣 **Stone** | Kidney stones (calculi) | 1,377 |
+
 
 **Total Dataset:** 12,446 CT scan images
 
@@ -82,8 +81,6 @@ pkd/
 │       └── CT-KIDNEY-DATASET-Normal-Cyst-Tumor-Stone/
 │           ├── Cyst/
 │           ├── Normal/
-│           ├── Stone/
-│           └── Tumor/
 ├── imp.txt                              # Project information
 └── README.md
 ```
